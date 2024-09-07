@@ -1,0 +1,156 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for readability */
+    background-color: white; /* Light background color for a subtle look */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Padding for spacing */
+    background-color: white; /* White background for the header */
+    color: #ffffff; /* Dark color for text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.logo {
+    font-size: 1.8rem; /* Increased font size for visibility */
+    font-weight: 700;
+    color: #b74b4b; /* Dark color for logo text */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    color: #b74b4b; /* Hover color change */
+}
+
+nav a {
+    color: #333; /* Dark color for nav links */
+    text-decoration: none;
+    margin: 0 1.5rem; /* Margin for spacing */
+    font-size: 1.2rem; /* Adjusted font size */
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+    border-bottom: 3px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+    color: #b74b4b; /* Highlight color */
+    border-bottom: 3px solid #b74b4b; /* Underline effect */
+}
+
+.hero {
+    background: #ffffff; /* White background for the hero section */
+    padding: 3rem 2rem; /* Padding for spacing */
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Border for separation */
+}
+
+.hero-content h1 {
+    margin: 0;
+    font-size: 3rem; /* Larger font size for emphasis */
+    font-weight: 700;
+    color: #ad4545; /* Darker color for text */
+}
+
+.menu {
+    padding: 2rem;
+    background-color: #ffffff; /* White background for the menu */
+    max-width: 1200px; /* Max width for layout control */
+    margin: 0 auto; /* Centered menu section */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.menu-item:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.menu-item img {
+    width: 180px; /* Larger image */
+    height: 180px; /* Square aspect ratio */
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+}
+
+.menu-details {
+    padding: 1rem;
+    flex: 1; /* Take up remaining space */
+}
+
+.menu-details h2 {
+    margin: 0;
+    font-size: 1.8rem; /* Increased font size for emphasis */
+    color: #333; /* Dark color for text */
+}
+
+.menu-details p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem; /* Adjusted font size for readability */
+    color: #666; /* Lighter color for description text */
+}
+
+.price {
+    font-weight: bold;
+    color: #b74b4b; /* Highlight color for price */
+    font-size: 1.4rem; /* Slightly larger font size for emphasis */
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    margin: 1rem 0.75rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #b74b4b;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0 0 15px #b74b4b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.4rem;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    color: #b74b4b;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 15px #b74b4b;
+}

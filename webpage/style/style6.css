@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for readability */
+    background-color: white; /* Light background color for a subtle look */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Padding for spacing */
+    background-color: white; /* White background for the header */
+    color: #ffffff; /* Dark color for text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+.logo {
+    font-size: 1.8rem; /* Increased font size for visibility */
+    font-weight: 700;
+    color: #b74b4b; /* Dark color for logo text */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    color: #b74b4b; /* Hover color change */
+}
+
+nav a {
+    color: #333; /* Dark color for nav links */
+    text-decoration: none;
+    margin: 0 1.5rem; /* Margin for spacing */
+    font-size: 1.2rem; /* Adjusted font size */
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+    border-bottom: 3px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+    color: #b74b4b; /* Highlight color */
+    border-bottom: 3px solid #b74b4b; /* Underline effect */
+}
+
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 20px;
+    margin-top: 10px; /* Adjust margin to account for fixed header */
+}
+
+/* Grid container for sections */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Section styling */
+section {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Styling for images */
+img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    object-fit: cover; /* Ensures image covers container while preserving aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Caption styling */
+figcaption {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px; /* Adjusted to match HTML root size */
+    color: #333;
+    background-color: #f9f9f9;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Ensures images within the container maintain uniform size */
+.container img {
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover ensures the image fills the area */
+}
+
